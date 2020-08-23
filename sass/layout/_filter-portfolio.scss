@@ -1,0 +1,15 @@
+/* Список разделов текущей страницы портфолио (Кнопки filter) */
+
+.section-filter {
+  padding-bottom: 50px;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & > .item:not(:last-child) {
+    margin-right: 8px;
+  }
+}

@@ -1,0 +1,89 @@
+/* <-------Footer------> */
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  & .container {
+    display: flex;
+  }
+}
+
+.footer-text {
+  color: $white;
+}
+
+.logo-footer {
+  color: $white;
+  font-family: "Raleway", sans-serif;
+
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+
+  &:hover {
+    color: $accent-color;
+  }
+}
+
+.footer-address {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-contacts {
+  margin-top: 9px;
+}
+
+.footer-subscribe {
+  display: flex;
+  margin-top: 20px;
+}
+
+.footer-subscribe input {
+  width: 358px;
+  align-items: center;
+  padding-left: 10px;
+  background-color: $footer-background-color;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  box-sizing: border-box;
+
+  &:hover {
+    outline: none;
+  }
+
+  &::placeholder {
+    color: #757575;
+  }
+}
+
+.join-telegram {
+  width: 24px;
+  height: 24px;
+  fill: $button-text-color;
+
+  margin-left: 10px;
+  outline: none;
+}
+
+.footer-join {
+  margin-left: 70px;
+
+  & b {
+    text-transform: uppercase;
+  }
+}
+
+.join-font {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-background {
+  background-color: $footer-background-color;
+}
+
+.dark-theme {
+  fill: white;
+}

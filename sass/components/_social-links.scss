@@ -1,0 +1,10 @@
+/* social links */
+
+.social-links {
+  color: var(--social-links-color);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}

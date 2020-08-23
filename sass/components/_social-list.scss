@@ -1,0 +1,42 @@
+.social-list {
+  display: flex;
+  margin-top: 20px;
+}
+
+.team .social-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.social-list-item-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background: $accent-color;
+    outline: none;
+  }
+}
+
+.social-list-item-link-svg {
+  fill: $social-links-color;
+  width: 20px;
+  height: 20px;
+
+  .social-list-item-link:hover & {
+    fill: $button-text-color;
+  }
+}
+
+.social-list-item:not(:last-child) {
+  margin-right: 10px;
+}
