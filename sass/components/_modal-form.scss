@@ -1,3 +1,10 @@
+@media screen and (max-width: 767px) {
+  // .form-wrapper {
+  // position: absolute;
+  // width: 450px;
+  // left: 50%;
+}
+
 /* <-------------BACKDROP---------------> */
 
 .body.is-open {
@@ -120,7 +127,7 @@
   border-radius: 4px;
   margin-bottom: 10px;
   padding-left: 42px;
-  width: 448px;
+  width: 100%;
 }
 
 .modal-form-comment {
