@@ -1,9 +1,15 @@
-/* ------Section------*/
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (max-width: 767px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
+
+/* ------Section------*/
+// .section {
+//   padding-top: 94px;
+//   padding-bottom: 94px;
+// }
 
 .section-title {
   color: $title-text-color;
