@@ -1,3 +1,10 @@
+@media screen and (max-width: 767px) {
+  .footer .social-list {
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+}
+
 .social-list {
   display: flex;
   margin-top: 20px;

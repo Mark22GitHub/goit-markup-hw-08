@@ -1,3 +1,11 @@
+@media screen and (max-width: 767px) {
+  .footer .button {
+    display: inline-flex;
+    border-radius: 4px;
+    padding: 10px 29px;
+  }
+}
+
 /* <-----Hero button-----> */
 
 .open-button {
@@ -44,12 +52,12 @@
 
   cursor: pointer;
 }
-.footer .button {
-  display: flex;
-  border-radius: 4px;
-  padding: 10px 29px;
-  margin-left: 12px;
-}
+// .footer .button {
+//   display: flex;
+//   border-radius: 4px;
+//   padding: 10px 29px;
+//   margin-left: 12px;
+// }
 
 /* Страница Портфолио */
 

@@ -1,89 +1,189 @@
-/* <-------Footer------> */
+@media screen and (max-width: 767px) {
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
 
-.footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
+    & .container {
+      display: block;
+    }
+  }
 
-  & .container {
+  .footer-text {
+    color: $white;
+  }
+
+  .footer-logo {
+    text-align: center;
+  }
+  .logo-footer {
+    color: $white;
+    font-family: "Raleway", sans-serif;
+
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.17;
+
+    &:hover {
+      color: $accent-color;
+    }
+  }
+
+  .footer-address {
+    margin-top: 20px;
+    margin-bottom: 60px;
     display: flex;
+    flex-direction: column;
   }
-}
 
-.footer-text {
-  color: $white;
-}
+  .footer-contacts {
+    margin-top: 9px;
 
-.logo-footer {
-  color: $white;
-  font-family: "Raleway", sans-serif;
-
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-
-  &:hover {
-    color: $accent-color;
+    font-size: 14px;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
   }
-}
 
-.footer-address {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-}
+  .footer-subscribe {
+    // display: flex;
+    margin-top: 20px;
+  }
 
-.footer-contacts {
-  margin-top: 9px;
-}
+  .footer-subscribe input {
+    width: 450px;
+    height: 50px;
+    align-items: center;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    background-color: $footer-background-color;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    box-sizing: border-box;
 
-.footer-subscribe {
-  display: flex;
-  margin-top: 20px;
-}
+    &:hover {
+      outline: none;
+    }
 
-.footer-subscribe input {
-  width: 358px;
-  align-items: center;
-  padding-left: 10px;
-  background-color: $footer-background-color;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  box-sizing: border-box;
+    &::placeholder {
+      color: #757575;
+    }
+  }
 
-  &:hover {
+  .join-telegram {
+    width: 24px;
+    height: 24px;
+    fill: $button-text-color;
+
+    margin-left: 10px;
     outline: none;
   }
 
-  &::placeholder {
-    color: #757575;
+  .footer-join {
+    text-align: center;
+
+    & b {
+      text-transform: uppercase;
+    }
+  }
+
+  .join-font {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .footer-background {
+    background-color: $footer-background-color;
+  }
+
+  .dark-theme {
+    fill: white;
   }
 }
 
-.join-telegram {
-  width: 24px;
-  height: 24px;
-  fill: $button-text-color;
+/* <-------Footer------> */
 
-  margin-left: 10px;
-  outline: none;
-}
+// .footer {
+//   padding-top: 60px;
+//   padding-bottom: 60px;
 
-.footer-join {
-  margin-left: 70px;
+//   & .container {
+//     display: flex;
+//   }
+// }
 
-  & b {
-    text-transform: uppercase;
-  }
-}
+// .footer-text {
+//   color: $white;
+// }
 
-.join-font {
-  color: rgba(255, 255, 255, 0.6);
-}
+// .logo-footer {
+//   color: $white;
+//   font-family: "Raleway", sans-serif;
 
-.footer-background {
-  background-color: $footer-background-color;
-}
+//   font-weight: bold;
+//   font-size: 26px;
+//   line-height: 1.19;
 
-.dark-theme {
-  fill: white;
-}
+//   &:hover {
+//     color: $accent-color;
+//   }
+// }
+
+// .footer-address {
+//   margin-top: 20px;
+//   display: flex;
+//   flex-direction: column;
+// }
+
+// .footer-contacts {
+//   margin-top: 9px;
+// }
+
+// .footer-subscribe {
+//   display: flex;
+//   margin-top: 20px;
+// }
+
+// .footer-subscribe input {
+//   width: 358px;
+//   align-items: center;
+//   padding-left: 10px;
+//   background-color: $footer-background-color;
+//   border: 1px solid rgba(255, 255, 255, 0.3);
+//   border-radius: 4px;
+//   box-sizing: border-box;
+
+//   &:hover {
+//     outline: none;
+//   }
+
+//   &::placeholder {
+//     color: #757575;
+//   }
+// }
+
+// .join-telegram {
+//   width: 24px;
+//   height: 24px;
+//   fill: $button-text-color;
+
+//   margin-left: 10px;
+//   outline: none;
+// }
+
+// .footer-join {
+//   margin-left: 70px;
+
+//   & b {
+//     text-transform: uppercase;
+//   }
+// }
+
+// .join-font {
+//   color: rgba(255, 255, 255, 0.6);
+// }
+
+// .footer-background {
+//   background-color: $footer-background-color;
+// }
+
+// .dark-theme {
+//   fill: white;
+// }
