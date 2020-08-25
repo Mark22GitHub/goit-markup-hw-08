@@ -1,10 +1,3 @@
-@media screen and (max-width: 767px) {
-  // .form-wrapper {
-  // position: absolute;
-  // width: 450px;
-  // left: 50%;
-}
-
 /* <-------------BACKDROP---------------> */
 
 .body.is-open {
@@ -52,6 +45,7 @@
   line-height: 1.15;
   text-align: center;
   margin-bottom: 12px;
+  color: $title-text-color;
 }
 
 .label-info {
@@ -246,4 +240,17 @@
   width: 11px;
   height: 8px;
   fill: $background-color;
+}
+
+@media screen and (max-width: 767px) {
+  .form-wrapper {
+    position: absolute;
+    width: 450px;
+    left: 50%;
+  }
+
+  .modal-form-check-label {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }

@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -15,51 +16,75 @@
     <!-- Шапка страницы -->
     <header class="page-header">
       <!-- Главная навигация -->
-      <div class="container">
-        <nav class="navigation">
-          <!-- Логотип -->
-          <a href="./index.html" class="logo"
-            ><span class="accent">Web</span>Studio</a
-          >
+      <div class="container header-container">
+        <!-- Логотип -->
+        <a href="./index.html" class="logo"
+          ><span class="accent">Web</span>Studio</a
+        >
+        <button
+          class="menu-burger"
+          data-menu-button
+          aria-expanded="false"
+          aria-controls="menu-wrapper"
+        >
+          <svg width="24" height="16">
+            <use
+              class="menu-burger"
+              href="./images/sprite.svg#menu-burger"
+            ></use>
+            <use
+              class="menu-burger-cross"
+              href="./images/sprite.svg#menu-cross-btn"
+            ></use>
+          </svg>
+        </button>
 
-          <!-- Ссылки на другие страницы или разделы текущей -->
-          <ul class="site-nav">
-            <li class="item">
-              <a href="./index.html" class="link transition">Студия</a>
-            </li>
-            <li class="item">
-              <a href="./portfolio.html" class="link transition portfolio"
-                >Портфолио</a
-              >
-            </li>
-            <li class="item">
-              <a href="" class="link transition">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <!-- Контактная информация -->
-        <ul class="contacts">
-          <li class="item">
-            <a
-              href="mailto:info@devstudio.com"
-              class="contacts-link transition"
-            >
-              <svg class="envelope-svg">
-                <use href="./images/sprite.svg#envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
+        <div class="menu-wrapper" data-menu>
+          <nav class="navigation">
+            <!-- Ссылки на другие страницы или разделы текущей -->
+            <ul class="site-nav">
+              <li class="item">
+                <a href="./index.html" class="link transition">Студия</a>
+              </li>
+              <li class="item">
+                <a href="./portfolio.html" class="link transition portfolio"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="item">
+                <a href="" class="link transition">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- Контактная информация -->
+          <div class="header-contacts">
+            <ul class="contacts">
+              <li class="item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="contacts-link transition"
+                >
+                  <svg class="envelope-svg">
+                    <use href="./images/sprite.svg#envelope"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
 
-          <li class="item">
-            <a href="tel:+38 096 111 11 11" class="contacts-link transition">
-              <svg class="smartphone-svg">
-                <use href="./images/sprite.svg#smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+              <li class="item">
+                <a
+                  href="tel:+38 096 111 11 11"
+                  class="contacts-link transition"
+                >
+                  <svg class="smartphone-svg">
+                    <use href="./images/sprite.svg#smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -314,7 +339,7 @@
     <!-- Подвал страницы -->
     <footer class="footer footer-text footer-background">
       <div class="container">
-        <div>
+        <div class="footer-logo">
           <a href="" class="logo-footer"
             ><span class="accent">Web</span>Studio</a
           >
@@ -389,5 +414,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/menu.js"></script>
   </body>
 </html>

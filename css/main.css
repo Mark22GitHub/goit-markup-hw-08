@@ -23,7 +23,7 @@ html {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -168,6 +168,7 @@ button:hover {
   line-height: 1.15;
   text-align: center;
   margin-bottom: 12px;
+  color: #212121;
 }
 
 .label-info {
@@ -350,6 +351,18 @@ button:hover {
 }
 
 @media screen and (max-width: 767px) {
+  .form-wrapper {
+    position: absolute;
+    width: 450px;
+    left: 50%;
+  }
+  .modal-form-check-label {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .footer .social-list {
     justify-content: center;
     margin-bottom: 60px;
@@ -506,6 +519,10 @@ button:hover {
   display: none;
 }
 
+.menu-burger:hover, .menu-burger:focus {
+  fill: #2196f3;
+}
+
 .menu-burger.is-open .menu-burger-cross {
   display: block;
 }
@@ -549,6 +566,7 @@ button:hover {
 
 @media screen and (max-width: 767px) {
   .menu-wrapper {
+    z-index: 1;
     text-align: center;
     position: absolute;
     top: 100%;

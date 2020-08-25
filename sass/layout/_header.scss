@@ -22,6 +22,11 @@
   &-cross {
     display: none;
   }
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
 }
 
 .menu-burger.is-open .menu-burger-cross {
@@ -73,6 +78,7 @@
 
 @media screen and (max-width: 767px) {
   .menu-wrapper {
+    z-index: 1;
     text-align: center;
     position: absolute;
     top: 100%;
@@ -280,6 +286,30 @@
   }
 }
 
+.envelope-svg {
+  align-items: center;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: $primary-text-color;
+  cursor: pointer;
+}
+
+.smartphone-svg {
+  align-items: center;
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  align-items: center;
+  fill: $primary-text-color;
+  cursor: pointer;
+}
+
+.envelope-svg,
+.smartphone-svg {
+  fill: currentColor;
+}
+
 // /* Page header */
 
 // .page-header {
@@ -385,27 +415,3 @@
 //     color: $accent-color;
 //   }
 // }
-
-.envelope-svg {
-  align-items: center;
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  fill: $primary-text-color;
-  cursor: pointer;
-}
-
-.smartphone-svg {
-  align-items: center;
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  align-items: center;
-  fill: $primary-text-color;
-  cursor: pointer;
-}
-
-.envelope-svg,
-.smartphone-svg {
-  fill: currentColor;
-}
