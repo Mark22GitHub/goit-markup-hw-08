@@ -1026,6 +1026,11 @@ button:hover {
 }
 
 @media screen and (min-width: 1200px) {
+  .work {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+  }
   .work .section-title {
     margin-bottom: 50px;
   }
