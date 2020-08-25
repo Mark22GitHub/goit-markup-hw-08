@@ -4,6 +4,12 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .work {
+    display: none;
+  }
+}
+
 /* чем мы занимаемся (заголовок) */
 
 // .work .section-title {

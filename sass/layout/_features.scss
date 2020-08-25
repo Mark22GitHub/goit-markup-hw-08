@@ -148,8 +148,11 @@
   }
 
   .feature-para {
+    // &:first-child {
+    //   margin-bottom: 30px;
+    // }
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 30px;
 
     font-family: "Roboto";
     font-style: normal;
