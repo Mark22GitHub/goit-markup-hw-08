@@ -107,13 +107,6 @@ button:hover {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-
 /* ------Section------*/
 .section-title {
   color: #212121;
@@ -123,6 +116,19 @@ button:hover {
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 60px;
+  }
 }
 
 /* <-------------BACKDROP---------------> */
