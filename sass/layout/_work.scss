@@ -10,6 +10,56 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .work .section-title {
+    margin-bottom: 50px;
+  }
+
+  .work-list {
+    display: flex;
+
+    &.item {
+      width: 370px;
+    }
+
+    & .item:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  .work-img-overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .work-title {
+    position: absolute;
+
+    top: 226px;
+
+    color: $white;
+
+    background-color: rgba(47, 48, 58, 0.8);
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    text-align: center;
+    align-items: center;
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+    width: 100%;
+  }
+}
+
 /* чем мы занимаемся (заголовок) */
 
 // .work .section-title {
