@@ -254,3 +254,15 @@
     line-height: 1.17;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .form-wrapper {
+    position: absolute;
+    width: 450px;
+    left: 50%;
+  }
+  .modal-form-check-label {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}

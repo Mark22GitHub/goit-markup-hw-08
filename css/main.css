@@ -131,6 +131,13 @@ button:hover {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 /* <-------------BACKDROP---------------> */
 .body.is-open {
   overflow: hidden;
@@ -368,6 +375,18 @@ button:hover {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .form-wrapper {
+    position: absolute;
+    width: 450px;
+    left: 50%;
+  }
+  .modal-form-check-label {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .footer .social-list {
     justify-content: center;
@@ -435,6 +454,12 @@ button:hover {
   .footer .button {
     display: flex;
     margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .button {
+    display: inline-flex;
   }
 }
 
@@ -1387,74 +1412,26 @@ button:hover {
 }
 
 @media screen and (min-width: 1200px) {
+  .footer-logo {
+    text-align: start;
+  }
   .footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    display: flex;
   }
   .footer .container {
-    display: flex;
+    justify-content: space-between;
   }
-  .footer-text {
-    color: #ffffff;
+  .footer .footer-address {
+    align-items: flex-start;
+    margin-bottom: 0;
   }
-  .logo-footer {
-    color: #ffffff;
-    font-family: "Raleway", sans-serif;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.19;
-  }
-  .logo-footer:hover {
-    color: #2196f3;
-  }
-  .footer-address {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-  }
-  .footer-contacts {
-    margin-top: 9px;
-  }
-  .footer-subscribe {
-    display: flex;
-    margin-top: 20px;
+  .footer-join {
+    text-align: start;
   }
   .footer-subscribe input {
     width: 358px;
-    align-items: center;
-    padding-left: 10px;
-    background-color: #2f303a;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  .footer-subscribe input:hover {
-    outline: none;
-  }
-  .footer-subscribe input::placeholder {
-    color: #757575;
-  }
-  .join-telegram {
-    width: 24px;
-    height: 24px;
-    fill: #ffffff;
-    margin-left: 10px;
-    outline: none;
-  }
-  .footer-join {
-    margin-left: 70px;
-  }
-  .footer-join b {
-    text-transform: uppercase;
-  }
-  .join-font {
-    color: rgba(255, 255, 255, 0.6);
-  }
-  .footer-background {
-    background-color: #2f303a;
-  }
-  .dark-theme {
-    fill: white;
+    margin-bottom: 0;
+    margin-right: 12px;
   }
 }
 
