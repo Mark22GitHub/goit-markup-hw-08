@@ -669,11 +669,16 @@ button:hover {
     display: flex;
     align-items: center;
   }
+  .site-nav .studio {
+    color: #2196f3;
+  }
+  .site-nav .studio::after {
+    top: 95%;
+  }
   .site-nav .item:not(:last-child) {
     margin-right: 50px;
   }
   .site-nav .link {
-    color: #212121;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;

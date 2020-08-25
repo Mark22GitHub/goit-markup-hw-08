@@ -222,13 +222,19 @@
     display: flex;
     align-items: center;
 
+    & .studio {
+      color: $accent-color;
+
+      &::after {
+        top: 95%;
+      }
+    }
+
     .item:not(:last-child) {
       margin-right: 50px;
     }
 
     .link {
-      color: $title-text-color;
-
       font-weight: 500;
       font-size: 14px;
       line-height: 1.14;
