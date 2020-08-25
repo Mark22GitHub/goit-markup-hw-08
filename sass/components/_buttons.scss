@@ -1,8 +1,16 @@
+.footer .button {
+  display: inline-flex;
+  border-radius: 4px;
+  padding: 10px 29px;
+}
+
 @media screen and (max-width: 767px) {
+}
+
+@media screen and (min-width: 768px) {
   .footer .button {
-    display: inline-flex;
-    border-radius: 4px;
-    padding: 10px 29px;
+    display: flex;
+    margin: 0 auto;
   }
 }
 

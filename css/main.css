@@ -425,11 +425,16 @@ button:hover {
   color: #2196f3;
 }
 
-@media screen and (max-width: 767px) {
+.footer .button {
+  display: inline-flex;
+  border-radius: 4px;
+  padding: 10px 29px;
+}
+
+@media screen and (min-width: 768px) {
   .footer .button {
-    display: inline-flex;
-    border-radius: 4px;
-    padding: 10px 29px;
+    display: flex;
+    margin: 0 auto;
   }
 }
 
@@ -1274,51 +1279,150 @@ button:hover {
 }
 
 /* -------Постоянные клиенты-------- */
-@media screen and (max-width: 767px) {
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer .container {
+  display: block;
+}
+
+.footer-text {
+  color: #ffffff;
+}
+
+.footer-logo {
+  text-align: center;
+}
+
+.logo-footer {
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.17;
+}
+
+.logo-footer:hover {
+  color: #2196f3;
+}
+
+.footer-address {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-contacts {
+  margin-top: 9px;
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-subscribe {
+  margin-top: 20px;
+}
+
+.footer-subscribe input {
+  width: 450px;
+  height: 50px;
+  align-items: center;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.footer-subscribe input:hover {
+  outline: none;
+}
+
+.footer-subscribe input::placeholder {
+  color: #757575;
+}
+
+.join-telegram {
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+  margin-left: 10px;
+  outline: none;
+}
+
+.footer-join {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.join-font {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-background {
+  background-color: #2f303a;
+}
+
+.dark-theme {
+  fill: white;
+}
+
+@media screen and (min-width: 768px) {
   .footer {
     padding-top: 60px;
     padding-bottom: 60px;
   }
   .footer .container {
-    display: block;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .footer .footer-address {
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .footer .container {
+    display: flex;
   }
   .footer-text {
     color: #ffffff;
-  }
-  .footer-logo {
-    text-align: center;
   }
   .logo-footer {
     color: #ffffff;
     font-family: "Raleway", sans-serif;
     font-weight: bold;
-    font-size: 24px;
-    line-height: 1.17;
+    font-size: 26px;
+    line-height: 1.19;
   }
   .logo-footer:hover {
     color: #2196f3;
   }
   .footer-address {
     margin-top: 20px;
-    margin-bottom: 60px;
     display: flex;
     flex-direction: column;
   }
   .footer-contacts {
     margin-top: 9px;
-    font-size: 14px;
-    line-height: 1.71;
-    color: rgba(255, 255, 255, 0.6);
   }
   .footer-subscribe {
+    display: flex;
     margin-top: 20px;
   }
   .footer-subscribe input {
-    width: 450px;
-    height: 50px;
+    width: 358px;
     align-items: center;
     padding-left: 10px;
-    margin-bottom: 20px;
     background-color: #2f303a;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
@@ -1338,7 +1442,7 @@ button:hover {
     outline: none;
   }
   .footer-join {
-    text-align: center;
+    margin-left: 70px;
   }
   .footer-join b {
     text-transform: uppercase;
