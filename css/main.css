@@ -132,6 +132,7 @@ button:hover {
 
 .backdrop {
   position: fixed;
+  z-index: 102;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
@@ -366,6 +367,7 @@ button:hover {
 @media screen and (min-width: 768px) {
   .form-wrapper {
     width: 450px;
+    top: 25%;
     left: 50%;
   }
 }
