@@ -266,3 +266,10 @@
     line-height: 1.17;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .form-wrapper {
+    width: 528px;
+    left: 50%;
+  }
+}

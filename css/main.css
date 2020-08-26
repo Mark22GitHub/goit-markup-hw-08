@@ -387,6 +387,13 @@ button:hover {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .form-wrapper {
+    width: 528px;
+    left: 50%;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .footer .social-list {
     justify-content: center;
@@ -915,6 +922,7 @@ button:hover {
     color: #212121;
     margin-top: 30px;
     margin-bottom: 10px;
+    text-align: start;
   }
   .feature-list .item {
     width: calc((100% - 30px * 1) / 2);
@@ -958,6 +966,7 @@ button:hover {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    text-align: start;
     margin-top: 30px;
     margin-bottom: 10px;
   }
