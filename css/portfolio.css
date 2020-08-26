@@ -1155,9 +1155,6 @@ button:hover {
     justify-content: space-around;
     flex-wrap: wrap;
   }
-  .footer .footer-address {
-    align-items: center;
-  }
   .footer-subscribe input {
     width: 450px;
   }
