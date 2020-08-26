@@ -38,7 +38,7 @@
           </svg>
         </button>
 
-        <div class="menu-wrapper" data-menu>
+        <div class="menu-wrapper" id="menu-wrapper" data-menu>
           <nav class="navigation">
             <!-- Ссылки на другие страницы или разделы текущей -->
             <ul class="site-nav">
@@ -69,10 +69,7 @@
               </li>
 
               <li class="item">
-                <a
-                  href="tel:+38 096 111 11 11"
-                  class="contacts-link transition"
-                >
+                <a href="tel:+380961111111" class="contacts-link transition">
                   <svg class="smartphone-svg">
                     <use href="./images/sprite.svg#smartphone"></use>
                   </svg>
@@ -229,18 +226,18 @@
                     ./images/our-team/desktop/igor/img-desktop-1.jpg     1x,
                     ./images/our-team/desktop/igor/img-desktop-@x2-1.jpg 2x
                   "
-                  media="(min-width: 1200px"
+                  media="(min-width: 1200px)"
                 />
                 <source
                   srcset="
                     ./images/our-team/laptop/igor/img-laptop-1.jpg     1x,
                     ./images/our-team/laptop/igor/img-laptop-@x2-1.jpg 2x
                   "
-                  media="(min-width: 768px"
+                  media="(min-width: 768px)"
                 />
                 <source
                   srcset="./images/our-team/mobile/igor/img-mobile-@x2-1.jpg 2x"
-                  media="(min-width: 480px"
+                  media="(min-width: 480px)"
                 />
                 <img
                   src="./images/our-team/mobile/igor/img-mobile-1.jpg"
@@ -551,7 +548,7 @@
             </a>
 
             <a
-              href="tel:+38 096 111 11 11"
+              href="tel:+380961111111"
               class="footer-contacts contacts-link transition"
             >
               +38 099 111 11 11
@@ -614,7 +611,7 @@
       </div>
     </footer>
 
-    <!-- <-------------BACKDROP----------->
+    <!-- BACKDROP -->
 
     <div class="backdrop is-hidden" data-modal>
       <div class="form-wrapper">
@@ -627,13 +624,14 @@
           Оставьте свои данные, мы вам перезвоним
         </h2>
         <form action="#" class="modal-form">
-          <label class="label-info" for="">Имя</label>
+          <label class="label-info" for="name">Имя</label>
           <div class="person-info-modal">
             <svg class="modal-svg">
               <use href="./images/sprite.svg#person-modal"></use>
             </svg>
 
             <input
+              id="name"
               type="text"
               name="user-name"
               class="modal-form-input modal-fonts"
@@ -642,12 +640,13 @@
             />
           </div>
 
-          <label class="label-info" for="">Телефон</label>
+          <label class="label-info" for="tel">Телефон</label>
           <div class="person-info-modal">
             <svg class="modal-svg">
               <use href="./images/sprite.svg#phone-modal"></use>
             </svg>
             <input
+              id="tel"
               type="tel"
               name="user-tel"
               class="modal-form-input modal-fonts"
@@ -656,12 +655,13 @@
             />
           </div>
 
-          <label class="label-info" for="">Почта</label>
+          <label class="label-info" for="email">Почта</label>
           <div class="person-info-modal">
             <svg class="modal-svg">
               <use href="./images/sprite.svg#email-modal"></use>
             </svg>
             <input
+              id="email"
               type="email"
               name="user-email"
               class="modal-form-input modal-fonts"
@@ -670,18 +670,19 @@
             />
           </div>
 
-          <label class="label-info" for="">Комментарий</label>
+          <label class="label-info" for="comment">Комментарий</label>
           <textarea
+            id="comment"
             name="user-comment"
             class="modal-form-comment modal-fonts"
             placeholder="Введите текст"
           ></textarea>
 
           <input
+            id="user-policy"
             type="checkbox"
             name="user-policy"
             value="accept-policy"
-            id="user-policy"
             class="modal-form-check-policy"
           />
 
