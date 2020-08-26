@@ -163,34 +163,54 @@
           <ul class="work-list">
             <li class="item">
               <div class="work-img-overlay">
-                <img
-                  src="./images/desktop.jpg"
-                  alt="Ноутбук"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="./images/engage/desktop/img-desktop-@x2-1.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./images/desktop.jpg"
+                    alt="Ноутбук"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <h3 class="work-title">Десктопные приложения</h3>
               </div>
             </li>
             <li class="item">
               <div class="work-img-overlay">
-                <img
-                  src="./images/mobile.jpg"
-                  alt="Смартфон"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="./images/engage/phone/img-desktop-@x2-2.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./images/mobile.jpg"
+                    alt="Смартфон"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
+
                 <h3 class="work-title">Мобильные приложения</h3>
               </div>
             </li>
             <li class="item">
               <div class="work-img-overlay">
-                <img
-                  src="./images/designer.jpg"
-                  alt="Планшет"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="./images/engage/laptops/img-desktop-@x2-3.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./images/designer.jpg"
+                    alt="Планшет"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
+
                 <h3 class="work-title">Дизайнерские решения</h3>
               </div>
             </li>
@@ -203,13 +223,33 @@
           <h2 class="team section-title">Наша команда</h2>
           <ul class="team-list">
             <li class="item">
-              <img
-                class="img"
-                src="./images/img-1-team.jpg"
-                alt="Сотрудник 1"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/our-team/desktop/igor/img-desktop-1.jpg     1x,
+                    ./images/our-team/desktop/igor/img-desktop-@x2-1.jpg 2x
+                  "
+                  media="(min-width: 1200px"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/laptop/igor/img-laptop-1.jpg     1x,
+                    ./images/our-team/laptop/igor/img-laptop-@x2-1.jpg 2x
+                  "
+                  media="(min-width: 768px"
+                />
+                <source
+                  srcset="./images/our-team/mobile/igor/img-mobile-@x2-1.jpg 2x"
+                  media="(min-width: 480px"
+                />
+                <img
+                  src="./images/our-team/mobile/igor/img-mobile-1.jpg"
+                  alt=""
+                  width="450"
+                  height="460"
+                />
+              </picture>
+
               <div class="team-list-info">
                 <h3 class="team-title">Игорь Демьяненко</h3>
                 <p class="team-para">Product Designer</p>
@@ -247,13 +287,32 @@
             </li>
 
             <li class="item">
-              <img
-                class="img"
-                src="./images/img-2-team.jpg"
-                alt="Сотрудник 2"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/our-team/desktop/olga/img-desktop-2.jpg     1x,
+                    ./images/our-team/desktop/olga/img-desktop-@x2-2.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/laptop/olga/img-laptop-2.jpg     1x,
+                    ./images/our-team/laptop/olga/img-laptop-@x2-2.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/our-team/mobile/olga/img-mobile-@x2-2.jpg 2x"
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/our-team/mobile/olga/img-mobile-2.jpg"
+                  alt=""
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="team-list-info">
                 <h3 class="team-title">Ольга Репина</h3>
                 <p class="team-para">Frontend Developer</p>
@@ -291,13 +350,35 @@
             </li>
 
             <li class="item">
-              <img
-                class="img"
-                src="./images/img-3-team.jpg"
-                alt="Сотрудник 3"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/our-team/desktop/nikolay/img-desktop-3.jpg     1x,
+                    ./images/our-team/desktop/nikolay/img-desktop-@x2-3.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/laptop/nikolay/img-laptop-3.jpg     1x,
+                    ./images/our-team/laptop/nikolay/img-laptop-@x2-3.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/mobile/nikolay/img-mobile-@x2-3.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/our-team/mobile/nikolay/img-mobile-3.jpg"
+                  alt=""
+                  width="450"
+                  height="460"
+                />
+              </picture>
+
               <div class="team-list-info">
                 <h3 class="team-title">Николай Тарасов</h3>
                 <p class="team-para">Marketing</p>
@@ -335,13 +416,34 @@
             </li>
 
             <li class="item">
-              <img
-                class="img"
-                src="./images/img-4-team.jpg"
-                alt="Сотрудник 4"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/our-team/desktop/mikhail/img-desktop-4.jpg     1x,
+                    ./images/our-team/desktop/mikhail/img-desktop-@x2-4.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/laptop/mikhail/img-laptop-4.jpg     1x,
+                    ./images/our-team/laptop/mikhail/img-laptop-@x2-4.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/mobile/mikhail/img-mobile-@x2-4.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/our-team/mobile/mikhail/img-mobile-4.jpg"
+                  alt=""
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="team-list-info">
                 <h3 class="team-title">Михаил Ермаков</h3>
                 <p class="team-para">UI Designer</p>
