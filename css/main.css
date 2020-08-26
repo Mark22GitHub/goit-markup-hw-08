@@ -93,17 +93,12 @@ button:hover {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }
 
@@ -118,17 +113,9 @@ button:hover {
   margin-bottom: 0;
 }
 
-@media screen and (max-width: 767px) {
-  .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .section {
-    padding-top: 60px;
-  }
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -159,10 +146,10 @@ button:hover {
 }
 
 .form-wrapper {
-  position: absolute;
-  width: 528px;
+  position: relative;
+  width: 100%;
   left: 50%;
-  top: 221px;
+  top: 0;
   transform: translateX(-50%);
   background-color: #fff;
   padding: 40px;
@@ -301,12 +288,12 @@ button:hover {
 }
 
 .modal-form-check-label {
-  display: flex;
+  display: inline-block;
   align-items: center;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   cursor: pointer;
@@ -316,7 +303,8 @@ button:hover {
 }
 
 .modal-form-check-label::before {
-  display: block;
+  display: inline-block;
+  vertical-align: middle;
   content: "";
   width: 11px;
   height: 11px;
@@ -363,7 +351,7 @@ button:hover {
   fill: #ffffff;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .form-wrapper {
     position: absolute;
     width: 450px;
@@ -377,13 +365,8 @@ button:hover {
 
 @media screen and (min-width: 768px) {
   .form-wrapper {
-    position: absolute;
     width: 450px;
     left: 50%;
-  }
-  .modal-form-check-label {
-    font-size: 12px;
-    line-height: 1.17;
   }
 }
 
@@ -391,6 +374,10 @@ button:hover {
   .form-wrapper {
     width: 528px;
     left: 50%;
+  }
+  .modal-form-check-label {
+    font-size: 14px;
+    line-height: 1.17;
   }
 }
 
@@ -497,7 +484,6 @@ button:hover {
 .button {
   color: #ffffff;
   background-color: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -621,12 +607,10 @@ button:hover {
     transform: translateY(-120%);
     background-color: #ffffff;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-    width: 480px;
-    height: 453px;
+    width: 100%;
+    height: auto;
     padding-top: 60px;
     padding-bottom: 60px;
-    padding-right: 140px;
-    padding-left: 140px;
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .menu-wrapper.is-open {
@@ -640,6 +624,10 @@ button:hover {
   }
   .header-contacts .item:not(:last-child) {
     margin-bottom: 16px;
+  }
+  .contacts {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -867,10 +855,6 @@ button:hover {
 }
 
 /* ------Hero------ */
-.features {
-  padding-bottom: 0;
-}
-
 .feature-list {
   display: block;
 }
@@ -916,7 +900,7 @@ button:hover {
   .feature-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
   }
   .feature-list .title {
     color: #212121;
@@ -925,13 +909,16 @@ button:hover {
     text-align: start;
   }
   .feature-list .item {
-    width: calc((100% - 30px * 1) / 2);
-    margin-right: 0;
+    width: calc((100% - 30px * 2) / 2);
+    margin-right: 30px;
+  }
+  .feature-list .item:nth-child(-n + 2) {
+    margin-bottom: 0;
   }
   .feature-list .item:nth-child(even) {
     margin-right: 0;
   }
-  .feature-item-icon {
+  .feature-list .feature-item-icon {
     display: flex;
     width: 100%;
     background: #f5f4fa;
@@ -939,11 +926,11 @@ button:hover {
     align-items: center;
     justify-content: center;
   }
-  .feature-item-icon-svg {
+  .feature-list .feature-item-icon-svg {
     width: 70px;
     height: 70px;
   }
-  .feature-para {
+  .feature-list .feature-para {
     margin-top: 0;
     margin-bottom: 30px;
     font-family: "Roboto";
@@ -972,6 +959,9 @@ button:hover {
   }
   .feature-list .item {
     width: calc((100% - 30px * 3) / 4);
+  }
+  .feature-list .item:nth-child(even) {
+    margin-right: 30px;
   }
   .feature-list .item:last-child {
     margin-right: 0;
@@ -1120,7 +1110,7 @@ button:hover {
     align-items: center;
   }
   .team-list .item {
-    width: 49%;
+    width: calc((100% - 30px * 2) / 2);
     margin-right: 0;
     margin-bottom: 30px;
     text-align: center;
@@ -1194,16 +1184,22 @@ button:hover {
 
 .clients-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
 .clients-list .item {
   margin-bottom: 30px;
+  display: flex;
+  width: calc((100% - 30px * 1) / 2);
 }
 
 .clients-list .item:nth-last-child(-n + 2) {
   margin-bottom: 0;
+}
+
+.clients-list .item:nth-last-child(-n + 2):nth-child(even) {
+  margin-right: 0;
 }
 
 .clients-list-item-link {
@@ -1257,6 +1253,15 @@ button:hover {
   height: 45px;
 }
 
+@media screen and (min-width: 768px) {
+  .clients-list .item {
+    width: calc((100% - 30px * 2) / 3);
+  }
+  .clients-list-item-link {
+    width: 226px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .clients .section-title {
     margin-bottom: 50px;
@@ -1267,6 +1272,9 @@ button:hover {
   }
   .clients-list > .item:not(:last-child) {
     margin-right: 30px;
+  }
+  .clients-list .item {
+    width: calc((100% - 30px * 5) / 6);
   }
   .clients-list-item-link {
     width: 170px;
@@ -1361,7 +1369,7 @@ button:hover {
 }
 
 .footer-subscribe input {
-  width: 450px;
+  width: 100%;
   height: 50px;
   align-items: center;
   padding-left: 10px;
@@ -1418,6 +1426,9 @@ button:hover {
   .footer .footer-address {
     align-items: center;
   }
+  .footer-subscribe input {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1430,7 +1441,7 @@ button:hover {
   .footer .container {
     justify-content: space-between;
   }
-  .footer .footer-address {
+  .footer-address {
     align-items: flex-start;
     margin-bottom: 0;
   }

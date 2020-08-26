@@ -78,7 +78,7 @@
     align-items: center;
 
     & .item {
-      width: 49%;
+      width: calc((100% - 30px * 2) / 2);
 
       margin-right: 0;
       margin-bottom: 30px;
